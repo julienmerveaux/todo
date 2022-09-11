@@ -1,0 +1,20 @@
+html
+    head
+        title ma todo liste
+        link(rel="stylesheet", href="./todo.css")
+        script(src="./todoV2.js",defer)
+
+    body
+        main
+            section.section1
+                section.title
+                    h1 TODOLIST
+                section.addListe
+                    button.btnclear.clear(onclick="clearListe(this.parentNode.parentNode.querySelector('.liste'))")
+                        img(src="./svg/remove.svg")
+                    button.clear(ondragover="dragRemove()")
+                        img(src="./svg/trash.svg")
+                    input.titleTodo(placeholder="Entrez ce que vous voulez faire")
+                    button.clear.add(onclick="addElements(this.parentNode)")
+                        img(src="./svg/plus.svg")
+                section.liste

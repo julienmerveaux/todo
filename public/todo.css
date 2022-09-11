@@ -1,0 +1,131 @@
+*{
+    animation-delay: 3s;
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:10% ;
+
+}
+main{
+    display: flex;
+    height: 100vh;
+    text-align: center;
+
+}
+
+.section1 {
+    max-width: 1300px;
+    width: 600px;
+    height: max-content;
+    min-height: 300px;
+    margin-top: 10px;
+    border: 1px solid #333
+}
+
+
+
+.title {
+    text-align: center;
+}
+
+.addListe {
+    display: flex;
+    justify-content: space-around;
+    height: 20%;
+    margin: 8px;
+
+}
+
+.titleTodo{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    border-radius: 5px;
+    margin: 10px;
+
+
+}
+
+.add {
+    display: flex;
+    align-items: center;
+    width: 12%;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+img {
+    fill: currentColor;
+    color:white;
+}
+.liste {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    height: 63%;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    order:1
+
+}
+p{
+    width: 80%;
+
+}
+
+.clear,.remove,.edit{
+    width: 10%;
+    margin: 10px;
+
+}
+
+
+.remove:hover{
+    background-color: #d00202;
+}
+
+.edit:hover{
+    background-color: #4697ec;
+}
+
+p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #333
+}
+
+.check > p {
+    background-color: #61e00a;
+
+}
+
+.check {
+    order:2
+}
+
+
+@keyframes delete {
+    100% {
+        scale:0.01;
+    }
+}
+
+.img {
+    height: 100%;
+}
